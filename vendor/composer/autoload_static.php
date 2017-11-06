@@ -6,8 +6,18 @@ namespace Composer\Autoload;
 
 class ComposerStaticInite43d34fb511f73ba5b8702713b631c6a
 {
-    public static $fallbackDirsPsr4 = array (
-        0 => __DIR__ . '/..' . '/LuanaDias/php-classes/src',
+    public static $prefixLengthsPsr4 = array (
+        'H' => 
+        array (
+            'Hcode\\' => 6,
+        ),
+    );
+
+    public static $prefixDirsPsr4 = array (
+        'Hcode\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/LuanaDias/php-classes/src',
+        ),
     );
 
     public static $prefixesPsr0 = array (
@@ -41,7 +51,8 @@ class ComposerStaticInite43d34fb511f73ba5b8702713b631c6a
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->fallbackDirsPsr4 = ComposerStaticInite43d34fb511f73ba5b8702713b631c6a::$fallbackDirsPsr4;
+            $loader->prefixLengthsPsr4 = ComposerStaticInite43d34fb511f73ba5b8702713b631c6a::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInite43d34fb511f73ba5b8702713b631c6a::$prefixDirsPsr4;
             $loader->prefixesPsr0 = ComposerStaticInite43d34fb511f73ba5b8702713b631c6a::$prefixesPsr0;
             $loader->classMap = ComposerStaticInite43d34fb511f73ba5b8702713b631c6a::$classMap;
 
