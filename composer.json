@@ -13,7 +13,7 @@
     },
     "autoload": {
         "psr-4": {
-            "hcodebr\\": "vendor\\LuanaDias\\php-classes\\src"
+            "Hcode\\": "vendor\\hcodebr\\php-classes\\src"
         }
     }
 }
