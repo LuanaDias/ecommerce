@@ -9,7 +9,7 @@ use Rain\Tpl;
 		private $tpl;
 		private $options = [];
 		private $defaults = [
-			"heeader"=>true,
+			"header"=>true,
 			"footer"=>true,
 			"data"=>[]
 		];
