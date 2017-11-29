@@ -34,13 +34,12 @@ use Rain\Tpl;
 
 		}
 
-		private function setData($data = array()){
+		private function setData($data = array()) {
+		     foreach ($data as $key => $value) {
+		     $this->tpl->assign($key, $value);
+		     }
+		 }
 
-			foreach ($data as $key => $value) {
-				$this->tpl->assing($key, $value);
-			}
-
-		}
 
 		public function setTpl($name, $data = array(), $returnHTML = false)	{
 
